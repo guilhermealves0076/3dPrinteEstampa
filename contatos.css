@@ -1,0 +1,61 @@
+.contato-grade {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.contato-info {
+  margin-top: 150px;
+}
+
+.contato-info p {
+  margin-bottom: 14px;
+  color: var(--texto-suave);
+}
+
+.contato-info strong {
+  color: #fff;
+}
+
+.formulario {
+  background: var(--card);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  padding: 28px;
+}
+
+.formulario label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 18px;
+  border-radius: 10px;
+  border: 1px solid var(--borda);
+  background: var(--fundo);
+  color: var(--texto);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: var(--rosa);
+}
+
+.formulario textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+@media (max-width: 700px) {
+  .contato-grade {
+    grid-template-columns: 1fr;
+  }
+}
